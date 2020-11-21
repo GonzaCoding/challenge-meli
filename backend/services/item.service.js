@@ -64,7 +64,7 @@ const ItemService = {
 
             }
             
-        } else if (searchString === undefined) { 
+        } else { 
             
             return {
                 status: 400,
@@ -72,16 +72,7 @@ const ItemService = {
                     message: "Faltan parámetros de búsqueda",
                 } 
             }
-
-        } else {
-
-            return {
-                status: 400,
-                data: {
-                    message: "Búsqueda incorrecta",
-                } 
-            }
-
+        
         }
      
     },
