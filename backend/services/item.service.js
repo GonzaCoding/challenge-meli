@@ -29,16 +29,8 @@ const ItemService = {
                     });
                 }
 
-                // Las categorías pueden venir dentro de "filter" o de "available_filters", se debe tomar desde donde corresponda
-                let categories = [];
-                let categorySearch = data.filters.find(element => element.id === "category");
-                if (categorySearch) {
-                    categories = categorySearch.values[0].path_from_root.map(category => category.name);
-                } else {
-                    categorySearch = data.available_filters.find(element => element.id === "category");
-                    categories = categorySearch.values.map(category => category.name);
-                }
-
+                let categories = data.filters[0]?.values[0].path_from_root.map(category => category.name) || [];
+                
                 const result = {
                     status: 200,
                     data: {
