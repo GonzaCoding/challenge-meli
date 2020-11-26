@@ -1,0 +1,48 @@
+$yellow: #FFE600;
+$black: #333333;
+$dark-gray: #666666;
+$medium-gray: #999999;
+$light-gray: #EEEEEE;
+$blue: #3483FA;
+
+$spacing1x: 16px;
+$spacing2x: $spacing1x * 2;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Proxima Nova","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif,sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    background-color: $yellow;
+    height: 60px;
+    max-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#main {
+    background-color: $light-gray;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    #main-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1260px) {
+        #main-container {
+            width: 95%;
+        }
+    }
+}
