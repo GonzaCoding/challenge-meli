@@ -1,5 +1,6 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
+import formatPrice from '../../helpers/formatPrice';
 
 import './Item.scss';
 
@@ -21,7 +22,7 @@ const Item = ({ item }) => {
                 </div>
                 <div className="item-component-data-container">
                     <div className="item-component-data-conditions">
-                        <span className="item-component-price">$ {price.amount.toLocaleString('es')}
+                        <span className="item-component-price">$ {formatPrice(price.amount)}
                             {free_shipping &&
                                 <img className="item-component-free-shipping" alt="free-shipping" src="../../assets/img/ic_shipping@2x.png" />
                             }
@@ -40,5 +41,6 @@ const Item = ({ item }) => {
         </article>
     )
 }
+
 
 export default Item;

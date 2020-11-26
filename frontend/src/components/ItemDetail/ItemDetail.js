@@ -1,6 +1,8 @@
 import React from 'react';
 import './ItemDetail.scss';
 
+import formatPrice from '../../helpers/formatPrice';
+
 const ItemDetail = ({item}) => {
     //console.log(item);
     return (
@@ -19,7 +21,7 @@ const ItemDetail = ({item}) => {
                         </div>
                         <h1 className="item-detail-component-title">{item.title}</h1>
                         <div className="item-detail-component-price">
-                            <span className="item-detail-component-price-amount">$ {item.price?.amount.toLocaleString('es')}</span>
+                            <span className="item-detail-component-price-amount">$ {formatPrice(item.price?.amount)}</span>
                             <span className="item-detail-component-price-decimals">{item.price?.decimals === 0 ? '00' : item.price?.decimals}</span>
                         </div>
                         
