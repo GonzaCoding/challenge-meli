@@ -1,0 +1,78 @@
+@import '../../assets/scss/common';
+
+.item-component {
+    
+    padding-left: $spacing1x;
+    padding-right: $spacing1x;
+    cursor: pointer;
+
+    .item-component-container {
+        display: flex;
+        flex-direction: row;
+        padding-top: $spacing1x;
+        padding-bottom: $spacing1x;
+        border-bottom: 1px solid $light-gray;
+
+        .item-component-image-container {
+            width: 180px;
+            min-width: 180px;
+            height: 180px;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+
+            .item-component-image {
+                width: 100%;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;            
+            }
+        }
+
+        .item-component-data-container {
+            margin-left: $spacing1x;
+            //background-color: red;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 24px;
+
+            .item-component-data-conditions {
+                display: flex;
+                flex-direction: row;
+                //background-color: green;
+                //justify-content: space-between;
+                align-items: flex-end;
+
+                .item-component-price {
+                    font-size: 24px;
+                    display: inline-flex;
+                    align-content: flex-end;
+                    flex: 6;
+                    .item-component-free-shipping  {
+                        width: 24px;
+                        height: 24px;
+                        margin-left: $spacing1x;
+                    }
+                }
+
+                
+
+                .item-component-city {
+                    justify-content: flex-end;
+                    font-size: 12px;
+                    flex: 2;
+                }
+            }
+
+            .item-component-title {
+                margin-top: $spacing2x;
+                font-size: 18px;
+            }
+        }
+    }
+    
+}
