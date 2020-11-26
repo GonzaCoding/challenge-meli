@@ -7,8 +7,7 @@
     cursor: pointer;
 
     .item-component-container {
-        display: flex;
-        flex-direction: row;
+        @include makeFlex(row);
         padding-top: $spacing1x;
         padding-bottom: $spacing1x;
         border-bottom: 1px solid $light-gray;
@@ -34,17 +33,12 @@
 
         .item-component-data-container {
             margin-left: $spacing1x;
-            //background-color: red;
-            display: flex;
-            flex-direction: column;
+            @include makeFlex(column);
             width: 100%;
             padding-top: 24px;
 
             .item-component-data-conditions {
-                display: flex;
-                flex-direction: row;
-                //background-color: green;
-                //justify-content: space-between;
+                @include makeFlex(row);
                 align-items: flex-end;
 
                 .item-component-price {
@@ -52,14 +46,13 @@
                     display: inline-flex;
                     align-content: flex-end;
                     flex: 6;
+
                     .item-component-free-shipping  {
                         width: 24px;
                         height: 24px;
                         margin-left: $spacing1x;
                     }
                 }
-
-                
 
                 .item-component-city {
                     justify-content: flex-end;

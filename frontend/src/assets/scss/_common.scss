@@ -8,6 +8,11 @@ $blue: #3483FA;
 $spacing1x: 16px;
 $spacing2x: $spacing1x * 2;
 
+@mixin makeFlex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -27,12 +32,12 @@ $spacing2x: $spacing1x * 2;
     align-items: center;
 }
 
+
 #main {
     background-color: $light-gray;
     height: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    @include makeFlex(column);
 
     #main-container {
         width: 100%;
@@ -46,3 +51,4 @@ $spacing2x: $spacing1x * 2;
         }
     }
 }
+

@@ -81,6 +81,9 @@
           background-color: #3483FA;
           border-radius: 4px;
           border: none; }
+          .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-data .item-detail-component-button:hover {
+            opacity: 0.8;
+            cursor: pointer; }
     .item-detail-component .item-detail-component-container .item-detail-component-description {
       max-width: 700px; }
       .item-detail-component .item-detail-component-container .item-detail-component-description .item-detail-component-title {
