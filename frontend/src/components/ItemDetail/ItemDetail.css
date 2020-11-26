@@ -1,0 +1,91 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Proxima Nova","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif,sans-serif; }
+
+#root {
+  display: flex;
+  flex-direction: column; }
+
+#navbar {
+  background-color: #FFE600;
+  height: 60px;
+  max-height: 60px;
+  display: flex;
+  align-items: center; }
+
+#main {
+  background-color: #EEEEEE;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  #main #main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; }
+  @media (max-width: 1260px) {
+    #main #main-container {
+      width: 95%; } }
+
+.item-detail-component {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  background-color: white;
+  border-radius: 4px 4px 0px 0px; }
+  .item-detail-component .item-detail-component-container {
+    margin: 32px; }
+    .item-detail-component .item-detail-component-container .item-detail-component-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-image-container {
+        width: 680px;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 4px;
+        margin-bottom: 80px; }
+        .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-image-container .item-detail-component-image {
+          position: absolute;
+          width: 100%;
+          height: auto; }
+      .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-data {
+        display: flex;
+        flex-direction: column;
+        width: 248px; }
+        .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-data .item-detail-component-condition {
+          margin-top: 32px;
+          font-size: 14px; }
+        .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-data .item-detail-component-title {
+          margin-top: 16px;
+          font-size: 24px; }
+        .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-data .item-detail-component-price {
+          margin-top: 32px;
+          display: flex;
+          flex-direction: row; }
+          .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-data .item-detail-component-price .item-detail-component-price-amount {
+            font-size: 46px; }
+          .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-data .item-detail-component-price .item-detail-component-price-decimals {
+            font-size: 12px; }
+        .item-detail-component .item-detail-component-container .item-detail-component-main .item-detail-component-data .item-detail-component-button {
+          margin-top: 32px;
+          height: 50px;
+          color: white;
+          background-color: #3483FA;
+          border-radius: 4px;
+          border: none; }
+    .item-detail-component .item-detail-component-container .item-detail-component-description {
+      max-width: 700px; }
+      .item-detail-component .item-detail-component-container .item-detail-component-description .item-detail-component-title {
+        font-size: 28px; }
+      .item-detail-component .item-detail-component-container .item-detail-component-description .item-detail-component-description-text {
+        margin-top: 32px;
+        color: #999999;
+        font-size: 16px; }

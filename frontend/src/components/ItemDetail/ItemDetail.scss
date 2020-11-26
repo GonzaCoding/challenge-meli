@@ -1,0 +1,101 @@
+@import '../../assets/scss/common';
+
+.item-detail-component {
+    
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: $spacing2x;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $spacing1x;
+    background-color: white;
+    border-radius: 4px 4px 0px 0px;
+    
+    .item-detail-component-container {
+        margin: $spacing2x;
+
+        .item-detail-component-main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            //padding: $spacing1x;
+
+            .item-detail-component-image-container {
+                width: 680px;
+                height: 600px;
+                overflow: hidden;
+                position: relative;
+                border-radius: 4px;
+                margin-bottom: 80px;
+
+
+                .item-detail-component-image {
+                    position: absolute;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+            .item-detail-component-data {
+                display: flex;
+                flex-direction: column;
+                width: 248px;
+    
+                .item-detail-component-condition {
+                    margin-top: $spacing2x;
+                    font-size: 14px;
+                }
+    
+                .item-detail-component-title {
+                    margin-top: $spacing1x;
+                    font-size: 24px;
+                }
+    
+                .item-detail-component-price {
+                    margin-top: $spacing2x;
+                    display: flex;
+                    flex-direction: row;
+
+                    .item-detail-component-price-amount {
+                        font-size: 46px;
+                    }
+                    
+                    .item-detail-component-price-decimals {
+                        font-size: 12px;
+                    }
+
+                }
+    
+                .item-detail-component-button {
+                    margin-top: $spacing2x;
+                    
+                    height: 50px;
+                    color: white;
+                    background-color: $blue;
+                    border-radius: 4px;
+                    border: none;
+                }
+            }
+    
+            
+        }
+    
+        .item-detail-component-description {
+            max-width: 700px;
+            .item-detail-component-title {
+                font-size: 28px;
+            }
+    
+            .item-detail-component-description-text{
+                margin-top: $spacing2x;
+                color: $medium-gray;
+                font-size: 16px;
+            }
+        }
+
+    }
+    
+    
+}
