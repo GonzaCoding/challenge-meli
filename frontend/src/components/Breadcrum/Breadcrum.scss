@@ -1,0 +1,20 @@
+@import '../../assets/scss/common';
+
+.breadcrum-component {
+   font-size: 14px;
+   margin-top: $spacing1x;
+   margin-bottom: $spacing1x;
+   color: $medium-gray;
+   display: flex;
+   flex-direction: row;
+
+   .breadcrum-component-container {
+       display: flex;
+       flex-direction: row;
+   }
+
+   .breadcrum-component-separator {
+       margin-left: 15px;
+       margin-right: 5px;
+   }
+}
