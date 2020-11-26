@@ -31,6 +31,22 @@
                     width: 100%;
                     height: auto;
                 }
+
+                
+            }
+
+            @media (max-width: 1100px) {
+                .item-detail-component-image-container {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+
+            @media (max-width: 800px) {
+                .item-detail-component-image-container {
+                    width: 270px;
+                    height: 270px;
+                }
             }
     
             .item-detail-component-data {
@@ -54,6 +70,12 @@
                     .item-detail-component-price-amount {
                         font-size: 46px;
                     }
+
+                    @media (max-width: 1100px) {
+                        .item-detail-component-price-amount {
+                            font-size: 32px;
+                        }
+                    }
                     
                     .item-detail-component-price-decimals {
                         font-size: 12px;
@@ -73,6 +95,13 @@
                         opacity: 0.8;
                         cursor: pointer;
                     }
+                }
+            }
+
+            @media (max-width: 800px) {
+                .item-detail-component-data {
+                    width: 200px;
+                    margin-left: 20px;
                 }
             }
         }
