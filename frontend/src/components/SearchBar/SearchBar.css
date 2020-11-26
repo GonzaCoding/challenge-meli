@@ -1,0 +1,71 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Proxima Nova","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif,sans-serif; }
+
+#root {
+  display: flex;
+  flex-direction: column; }
+
+#navbar {
+  background-color: #FFE600;
+  height: 60px;
+  max-height: 60px;
+  display: flex;
+  align-items: center; }
+
+#main {
+  background-color: #EEEEEE;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  #main #main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; }
+  @media (max-width: 1260px) {
+    #main #main-container {
+      width: 95%; } }
+
+.search-bar-component {
+  width: 100%;
+  max-width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  .search-bar-component .search-bar-logo-container {
+    width: 80px; }
+    .search-bar-component .search-bar-logo-container .search-bar-logo-img {
+      display: block;
+      cursor: pointer; }
+  .search-bar-component .search-bar-input {
+    font-size: 18px;
+    width: 100%;
+    max-width: 1200px;
+    border: none;
+    height: 100%;
+    padding-left: 16px;
+    border-radius: 4px 0px 0px 4px; }
+  .search-bar-component .search-bar-button-container {
+    background-color: #EEEEEE;
+    position: relative;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 4px 4px 0px; }
+    .search-bar-component .search-bar-button-container .search-bar-button-img {
+      display: block;
+      height: 18px; }
+    .search-bar-component .search-bar-button-container:hover {
+      background-color: #999999;
+      cursor: pointer; }
+
+@media (max-width: 1260px) {
+  .search-bar-component {
+    width: 95%; } }
