@@ -101,7 +101,7 @@ const ItemService = {
                         decimals: parseFloat((data.price % 1).toFixed(2)),
                     },
                     picture: data.pictures[0].secure_url,
-                    condition: data.attributes[1].value_name,
+                    condition: data.condition,
                     free_shipping: data.shipping.free_shipping,
                     sold_quantity: data.sold_quantity,
                     description: "",
