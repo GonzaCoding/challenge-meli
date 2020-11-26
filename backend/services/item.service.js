@@ -111,7 +111,7 @@ const ItemService = {
             response = await fetch(queryURL + "/description");
             data = await response.json();
     
-            result.description = data.plain_text;
+            result.item.description = data.plain_text;
     
             return {
                 status: 200,
