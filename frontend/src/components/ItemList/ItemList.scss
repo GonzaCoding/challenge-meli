@@ -1,0 +1,20 @@
+@import '../../assets/scss/common';
+
+.item-list-component {
+    
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $spacing1x;
+    
+    .item-list-items-container {
+        background-color: white;
+        border-radius: 4px 4px 0px 0px;
+        //padding: $spacing1x;
+    }
+    
+}
+
