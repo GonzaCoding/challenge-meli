@@ -26,6 +26,7 @@ const ItemService = {
                         picture: data.results[i].thumbnail,
                         condition: data.results[i].attributes[1].value_name,
                         free_shipping: data.results[i].shipping.free_shipping,
+                        state_name: data.results[i].address.state_name,
                     });
                 }
 
